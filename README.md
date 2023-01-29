@@ -7,27 +7,27 @@
 
   Prerequisites
   ```
-  *# update existing list of packages*
+  # update existing list of packages
   sudo apt update 
-  *# install prerequisites*
+  # install prerequisites
   sudo apt install apt-transport-https ca-certificates curl software-properties-common
-  *# add GPG key for the official Docker repo to system*
+  # add GPG key for the official Docker repo to system
   curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add - 
-  *# add the Docker repo to apt sources*
+  # add the Docker repo to apt sources
   sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable"
   ```
   Installation
   ```
-  *# install from the Docker repo*
+  # install from the Docker repo
   apt-cache policy docker-ce
-  *# install Docker*
+  # install Docker
   sudo apt install docker-ce 
-  *# check that Docker is running*
+  # check that Docker is running
   sudo systemctl status docker 
   ```
   Additional
   ```
-  *# add username to the docker group to use docker commands without sudo*
+  # add username to the docker group to use docker commands without sudo
   sudo usermod -aG docker ${USER} 
   ```
 
