@@ -37,6 +37,7 @@
   docker pull jupyter/datascience-notebook
   docker run -p 8888:8888 -v $(pwd):/home/user/ds jupyter/datascience-notebook
   ```
+  Alternatively, create a `Dockerfile` and use `docker build` to create an image based on the jupyter/datascience-notebook image.
   
   **Some notebooks**
   
